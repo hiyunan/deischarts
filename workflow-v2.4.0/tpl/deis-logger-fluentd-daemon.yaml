@@ -23,7 +23,7 @@ spec:
       serviceAccount: deis-logger-fluentd
       containers:
       - name: deis-logger-fluentd
-        image: quay.io/{{ .fluentd.org }}/fluentd:{{env "FLUENTD_GIT_TAG" | default .fluentd.dockerTag}}
+        image: {{ .fluentd.org }}/fluentd:{{env "FLUENTD_GIT_TAG" | default .fluentd.dockerTag}}
         imagePullPolicy: {{.fluentd.pullPolicy}}
 {{- if or (.fluentd.limits_cpu) (.fluentd.limits_memory)}}
         resources:
