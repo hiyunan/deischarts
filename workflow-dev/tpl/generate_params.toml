@@ -67,7 +67,7 @@ hostname = ""
 
 [minio]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 
 [s3]
@@ -110,36 +110,36 @@ builder_container = "your-builder-container-name"
 
 [builder]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [slugbuilder]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 
 [dockerbuilder]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 
 [controller]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [slugrunner]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 
 [database]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # Configure the following ONLY if using an off-cluster PostgreSQL database
 name = "database name"
@@ -152,14 +152,14 @@ port = "database port"
 
 [registry]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [registry_token_refresher]
 org = "deis"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # Prefix for the imagepull secret created when using private registry
 secretPrefix = "private-registry"
@@ -171,7 +171,7 @@ tokenRefreshTime = ""
 
 [registry_proxy]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 hostPort = 5555
 limits_cpu = "100m"
@@ -179,7 +179,7 @@ limits_memory = "50Mi"
 
 [workflowManager]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 versionsApiURL = "https://versions-staging.deis.com"
 doctorApiURL = "https://doctor-staging.deis.com"
@@ -188,14 +188,14 @@ doctorApiURL = "https://doctor-staging.deis.com"
 
 [logger]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [loggerRedis]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # Configure the following ONLY if using an off-cluster Redis instance for logger
 db = "0"
@@ -207,7 +207,7 @@ password = "redis password" # "" == no password
 
 [router]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 platformDomain = ""
 # limits_cpu = "100m"
@@ -215,35 +215,35 @@ platformDomain = ""
 
 [fluentd]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [grafana]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [influxdb]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [telegraf]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
 
 [nsqd]
 org = "deisci"
-pullPolicy = "Always"
+pullPolicy = "IfNotPresent"
 dockerTag = "canary"
 # limits_cpu = "100m"
 # limits_memory = "50Mi"
